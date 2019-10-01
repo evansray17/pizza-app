@@ -5,9 +5,9 @@
     loading...
     </div>
     <div v-if="!loading">
-   <b-container v-for="(p,index) in pizzaArray" :key="index">
-    <b-row cols="3">
-      <b-col cols-md="6">
+   <b-container>
+    <b-row>
+      <b-col xs="12" md="6" lg="4" v-for="(p,index) in pizzaArray" :key="index">
     <div>
       <b-card  
         
